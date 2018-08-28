@@ -1,0 +1,17 @@
+<template name="list-item">
+  <view class='list-container'>
+    <view class="list-author-date">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>
+    <text>{{title}}</text>
+    <image src='{{imgSrc}}'></image>
+    <text>{{content}}</text>
+    <view class="list-stat">
+      <image src='../../images/icon/chat.png'></image>
+      <text>{{collection}}</text>
+      <image src='../../images/icon/view.png'></image>
+      <text>{{reading}}</text>
+    </view>
+  </view>
+</template>

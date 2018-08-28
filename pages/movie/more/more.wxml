@@ -1,0 +1,2 @@
+<import src="../template/grid/temp_movie_grid" />
+<template is="grid" data="{{movies}}" />

@@ -1,0 +1,7 @@
+<view class='container'>
+  <image src="../../images/avatar/1.png"></image>
+  <text class='user'>Hello,七月</text>
+  <view class="entry-container">
+    <text class="entry" bindtap="enter">开启小程序之旅</text>
+  </view>
+</view>

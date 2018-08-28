@@ -1,0 +1,17 @@
+<import src="../movie/temp_movie_movie" />
+<template name="list">
+  <view class="list-container">
+    <view class="title">
+      <text>{{title}}</text>
+      <view class='more'>
+        <text bindtap='moreMovies' data-sort="{{title}}">更多</text>
+        <image src="/images/icon/arrow-right.png" />
+      </view>
+    </view>
+    <view class="movies">
+      <block wx:for="{{movies}}" wx:key="{{idx}}">
+        <template is="movie" data="{{...item}}"></template>
+      </block>
+    </view>
+  </view>
+</template>

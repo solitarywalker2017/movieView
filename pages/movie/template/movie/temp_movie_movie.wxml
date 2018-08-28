@@ -1,0 +1,8 @@
+<import src="../star/temp_movie_star" />
+<template name="movie">
+  <view class="movie-container" bindtap='showMovieDetail' data-id="{{id}}">
+    <image src="{{coverageUrl}}"></image>
+    <text>{{title}}</text>
+    <template is="star" data="{{...rating}}"></template>
+  </view>
+</template>

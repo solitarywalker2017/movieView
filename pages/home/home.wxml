@@ -1,0 +1,21 @@
+<import src="template/temp_list_item" />
+<view>
+  <swiper indicator-dots="{{indicator-dots}}" autoplay="{{autoplay}}" interval='{{interval}}' circular="{{circular}}" catchtap="showDetail">
+  <!-- 使用循环无法获取data-id的属性值 -->
+    <swiper-item>
+      <image  src="/images/wx.png" data-id="3"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png" data-id="4"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/iqiyi.png" data-id="5"></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{newsList}}" wx:key="{{item.postId}}">
+    <view bindtap='showDetail' data-id="{{item.postId}}">
+      <template is="list-item" data="{{...item}}" />
+    </view>
+  </block>
+</view>
